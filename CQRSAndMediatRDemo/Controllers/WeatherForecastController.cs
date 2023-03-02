@@ -30,13 +30,6 @@ namespace CQRSAndMediatRDemo.Controllers
 		[HttpGet(Name = "GetWeatherForecast")]
 		public IEnumerable<WeatherForecast> Get()
 		{
-			List<KeyValuePair<string, string>> headers = null;
-
-			foreach (KeyValuePair<string, string> header in headers)
-			{
-
-			}
-
 			#region MyRegion - PrincipalContext Works
 			PrincipalContext context = new PrincipalContext(ContextType.Domain);
 
